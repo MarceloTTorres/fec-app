@@ -1,0 +1,139 @@
+Lab Med veternaria bloco D
+-Latitude -21,79565
+-Longitude -48,17755
+
+Lab anatomia 1 bloco D
+-Latitude -21,79576
+-Longitude -48,17748
+
+Lab anatomia 2 bloco D
+-Latitude -21,79565
+-Longitude -48,17755
+
+Lab biologia bloco A
+-Latitude -21,79594
+-Longitude -48,17763
+
+Lab informatica 2
+-Latitude -21,79609
+-Longitude-48,17796
+
+Lab química bloco A
+-Latitude -21,79594
+-Longitude -48,1776
+
+Sala 104 2andar
+-Latitude -21,79604
+-Longitude -48,17752
+
+Jogos Digitais
+-Latitude -21,79613
+-Longitude -48,17805
+
+Sala 1 bloco A
+-Latitude -21,79588
+-Longitude -48,17786
+
+Sala 101 2andar
+-Latitude -21,79605
+-Longitude -48,17755
+
+Sala 102 2andar
+-Latitude -21,79606
+-Longitude -48,17757
+
+Sala 103 2andar
+-Latitude -21,79604
+-Longitude -48,17755
+
+Sala 105 2andar
+-Latitude -21,79609
+-Longitude -48,17778
+
+Sala 107 2andar
+-Latitude -21,79613
+-Longitude -48,1777
+
+Sala 108 2andar
+-Latitude -21.7962
+-Longitude -48,17768
+
+Sala 109 2andar
+-Latitude -21,79621
+-Longitude -48,17762
+
+Sala 17 bloco D
+-Latitude -21,79597
+-Longitude -48,17796
+
+Sala 19 bloco D
+-Latitude -21,79587
+-Longitude -48,17795
+
+Sala 20 bloco D
+-Latitude -21,79592
+-Longitude -48,17795
+
+Sala 201 3andar
+-Latitude -2179605
+-Longitude -48,17755
+
+Sala 202 3andar
+-Latitude -21,79607
+-Longitude -48,17753
+
+Sala 203 3andar
+-Latitude -21,79604
+-Longitude -48,1776
+
+Sala 204 3andar
+-Latitude -21,79604
+-Longitude -48,17758
+
+Sala 205 3andar
+-Latitude -21,7961
+-Longitude -48,17765
+
+Sala 22 bloco D
+-Latitude -21,79587
+-Longitude -48,17795
+
+Sala 24 bloco C
+-Latitude -21,79617
+-Longitude -48,17809
+
+Sala 301 4andar
+-Latitude -21,79606
+-Longitude -48,17751
+
+Sala 302 4andar
+-Latitude -21,79606
+-Longitude -48,17754
+
+Sala 303 4andar
+-Latitude -21,79607
+-Longitude -48,17754
+
+Sala 304 4andar
+-Latitude -21,79605
+-Longitude -48,17751
+
+Sala 305 4andar
+-Latitude -21,79609
+-Longitude -48,17756
+
+Sala 306 4andar
+-Latitude -21,79608
+-Longitude -48,17761
+
+Sala 307 4andar
+-Latitude -21,79617
+-Longitude -48,17763
+
+Sala 308 4andar
+-Latitude -21,79627
+-Longitude -48,17764
+
+Sala 309 4andar
+-Latitude -21,79625
+-Longitude -48,17764
