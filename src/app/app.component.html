@@ -17,6 +17,10 @@
             </ion-item>
           </ion-menu-toggle>
         </ion-list>
+          <div padding (click)="logof()" style="cursor:pointer; position: relative; padding: 18px 50px;">
+            <ion-icon slot="icon-only" name="log-out"></ion-icon>&nbsp;
+            <ion-label expand="full">Log out</ion-label>
+          </div>
       </ion-content>
     </ion-menu>
     <ion-router-outlet main></ion-router-outlet>
