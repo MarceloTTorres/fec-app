@@ -1,16 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouteReuseStrategy } from '@angular/router';
-
-import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { RouterModule, RouteReuseStrategy, Routes } from '@angular/router';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-
-import { AppComponent } from './app.component';
+import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
-import { HttpClient } from 'selenium-webdriver/http';
-import { FormsModule } from '@angular/forms';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -24,6 +22,7 @@ import { FormsModule } from '@angular/forms';
   providers: [
     StatusBar,
     SplashScreen,
+    Geolocation,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

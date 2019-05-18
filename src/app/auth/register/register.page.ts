@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../auth.service';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-register',
@@ -9,7 +10,7 @@ import { AuthService } from '../auth.service';
 })
 export class RegisterPage implements OnInit {
 
-  constructor(private authService: AuthService, private router: Router) { }
+  constructor(private authService: AuthService, private router: Router,  public menu: MenuController) { }
 
   ngOnInit() {
   }
@@ -20,4 +21,11 @@ export class RegisterPage implements OnInit {
     });
   }
   
+  ionViewDidEnter(){
+    this.menu.enable(false);
+  }
+  
+  ionViewWillLeave(){
+    this.menu.enable(true);
+  }
 }
