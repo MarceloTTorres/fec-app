@@ -23,9 +23,9 @@ export class AppComponent {
       icon: 'list'
     },
     {
-      title: 'Sobre',
-      url: '/sobre',
-      icon: 'sobre'
+      title: 'About',
+      url: '/about',
+      icon: 'information-circle'
     }
   ];
 
@@ -48,7 +48,8 @@ export class AppComponent {
         if (state) {
           this.router.navigate(['home']);
         } else {
-          this.router.navigate(['login']);
+          this.router.navigate(['home']);
+          //this.router.navigate(['login']);
         }
         
       });
