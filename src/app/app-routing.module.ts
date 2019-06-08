@@ -18,6 +18,11 @@ const routes: Routes = [
       // canActivate: [AuthService],
       loadChildren: './about/about.module#AboutPageModule'
   },
+  {
+    path: 'search',
+    // canActivate: [AuthService],
+    loadChildren: './search/search.module#SearchPageModule'
+  },
   { path: 'register', loadChildren: './auth/register/register.module#RegisterPageModule' },
   { path: 'login', loadChildren: './auth/login/login.module#LoginPageModule' }
 

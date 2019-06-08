@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Search Project
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #form="ngForm">
+    <div>
+      <ion-item>
+        <ion-input (keyup)="findProject(form)" name="projeto" type="text" placeholder=" NOME, ÁREA DE CONHECIMENTO, CURSO, ALUNO PARTICIPANTE ou PALAVRA CHAVE" ngModel required></ion-input>
+      </ion-item>
+    </div>
+    <ion-list>
+      <ion-item (click)="viewProject(item.id)" *ngFor="let item of items">
+        {{item.title}}
+      </ion-item>
+    </ion-list>
+  </form>
+</ion-content>

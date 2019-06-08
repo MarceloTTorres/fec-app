@@ -26,6 +26,11 @@ export class AppComponent {
       title: 'About',
       url: '/about',
       icon: 'information-circle'
+    },
+    {
+      title: 'Search Project',
+      url: '/search',
+      icon: 'search'
     }
   ];
 
