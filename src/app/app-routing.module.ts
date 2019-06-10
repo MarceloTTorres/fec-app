@@ -13,10 +13,11 @@ const routes: Routes = [
     // canActivate: [AuthService],
     loadChildren: './list/list.module#ListPageModule'
   },
-  // {
-  //   path: 'sobre',
-  //   loadChildren: './sobre/sobre.module#SobreComponent'
-  // },
+   {
+      path: 'about',
+      // canActivate: [AuthService],
+      loadChildren: './about/about.module#AboutPageModule'
+  },
   { path: 'register', loadChildren: './auth/register/register.module#RegisterPageModule' },
   { path: 'login', loadChildren: './auth/login/login.module#LoginPageModule' }
 

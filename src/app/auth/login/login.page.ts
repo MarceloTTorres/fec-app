@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthService } from '../auth.service';
 import { MenuController } from '@ionic/angular';
-import { formArrayNameProvider } from '@angular/forms/src/directives/reactive_directives/form_group_name';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-login',

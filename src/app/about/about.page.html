@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Card Title</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Aqui vamos falar um pouco sobre o app.
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card>
+    <ion-item *ngFor="let item of usuarios">
+        <ion-avatar slot="start">
+          <img src="{{item.avatar}}">
+        </ion-avatar>
+        <ion-label>
+          <h3>{{item.nome}}</h3>
+          <h4>{{item.sub}}</h4>
+          <p>{{item.local}}</p>
+        </ion-label>
+        <ion-avatar slot="end">
+          <a href="{{item.logoLinkedin}}" target="_blank" rel="linkedin">
+            <ion-icon size="large" name="logo-linkedin"></ion-icon>
+          </a>
+        </ion-avatar>
+        <ion-avatar slot="end">
+          <a href="{{item.logoGithub}}" target="_blank" rel="github">
+            <ion-icon size="large" name="logo-github"></ion-icon>
+          </a>
+        </ion-avatar>
+      </ion-item>
+  </ion-card>
+
+
+</ion-content>
