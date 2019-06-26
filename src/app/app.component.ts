@@ -31,6 +31,11 @@ export class AppComponent {
       title: 'Search Project',
       url: '/search',
       icon: 'search'
+    },
+    {
+      title: 'Maps',
+      url: '/maps',
+      icon: 'map'
     }
   ];
 

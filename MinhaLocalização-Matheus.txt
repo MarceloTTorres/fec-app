@@ -1,32 +1,32 @@
-Lab Med veternaria bloco D
+Lab Med veternaria bloco D //foi
 -Latitude -21,79565
 -Longitude -48,17755
 
-Lab anatomia 1 bloco D
+Lab anatomia 1 bloco D //foi
 -Latitude -21,79576
 -Longitude -48,17748
 
-Lab anatomia 2 bloco D
+Lab anatomia 2 bloco D //foi
 -Latitude -21,79565
 -Longitude -48,17755
 
-Lab biologia bloco A
+Lab biologia bloco A //foi
 -Latitude -21,79594
 -Longitude -48,17763
 
-Lab informatica 2
+Lab informatica  //foi
 -Latitude -21,79609
 -Longitude-48,17796
 
-Lab química bloco A
+Lab química bloco  //foi
 -Latitude -21,79594
 -Longitude -48,1776
 
-Sala 104 2andar
+Sala 104 2andar //foi
 -Latitude -21,79604
 -Longitude -48,17752
 
-Jogos Digitais
+Jogos Digitais //foi
 -Latitude -21,79613
 -Longitude -48,17805
 
