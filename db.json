@@ -1,0 +1,125 @@
+{
+  "login": [
+    {
+      "id": 1,
+      "name": "Rafael Veloso",
+      "email": "velosocrew@gmail.com",
+      "password": "test",
+      "access_token": "dmVsb3NvY3Jld0BnbWFpbC5jb21fdGVzdA==",
+      "expires_in": 500
+    },
+    {
+      "id": 2,
+      "name": "Teste",
+      "email": "teste@gmail.com",
+      "password": "123",
+      "access_token": "dGVzdEBnbWFpbC5jb21fMTIz",
+      "expires_in": 500
+    },
+    {
+      "email": "velosocrew@gmail.com",
+      "password": "test",
+      "id": 3
+    },
+    {
+      "email": "velosocrew@gmail.com",
+      "password": "test",
+      "id": 4
+    }
+  ],
+  "alunos": [
+    {
+      "id": 1,
+      "avatar": "https://avatars0.githubusercontent.com/u/24421598?s=460&v=4",
+      "nome": "Marcelo Torres",
+      "sub": "Líder Técnico PHP Laravel, .Net e Java",
+      "local": "Araraquara, São Paulo, Brasil",
+      "logoLinkedin": "https://www.linkedin.com/in/marcelo-teixeira-torres/",
+      "logoGithub": "https://github.com/MarceloTTorres"
+    },
+    {
+      "id": 2,
+      "avatar": "https://media.licdn.com/dms/image/C4E03AQH7jOYTirg2pw/profile-displayphoto-shrink_200_200/0?e=1571875200&v=beta&t=jzEo50VSkcRTJtmNMxPMaf-xKguwZkhPrqyuchVFv64",
+      "nome": "Rafael Veloso",
+      "sub": "Desenvolvedor na Cast Group",
+      "local": "Araraquara, São Paulo, Brasil",
+      "logoLinkedin": "https://www.linkedin.com/in/rafael-veloso-197718158/",
+      "logoGithub": "https://github.com/rsveloso01"
+    },
+    {
+      "id": 3,
+      "avatar": "https://media.licdn.com/dms/image/C4D03AQEwJaAuiO21SA/profile-displayphoto-shrink_200_200/0?e=1571875200&v=beta&t=hYguKroE7PA6-YaMl95ojZ9mIkO8DLBuG8WP3xWLrGw",
+      "nome": "Vinicius Vieira",
+      "sub": "Aluno na UNIARA",
+      "local": "Araraquara, São Paulo, Brasil",
+      "logoLinkedin": "https://www.linkedin.com/in/vinicius-vieira-25447a144/",
+      "logoGithub": "https://github.com/viniciusUniara"
+    },
+    {
+      "id": 4,
+      "avatar": "https://media.licdn.com/dms/image/C4E03AQHD3baYldDYhw/profile-displayphoto-shrink_200_200/0?e=1571875200&v=beta&t=8OlO_7cswJLdKuyNaTuAGDCNkBwcZGbtZnby7X0eeug",
+      "nome": "Eduardo Garcia",
+      "sub": "Desenvolvedor na Cast Group",
+      "local": "Araraquara, São Paulo, Brasil",
+      "logoLinkedin": "https://www.linkedin.com/in/eduardohgarcia/",
+      "logoGithub": "https://github.com/EduardoHGarcia"
+    },
+    {
+      "id": 5,
+      "avatar": "https://avatars3.githubusercontent.com/u/25551033?s=400&v=4",
+      "nome": "Julio Kasahara",
+      "sub": "Desenvolvedor na Cast Group",
+      "local": "Araraquara, São Paulo, Brasil",
+      "logoLinkedin": "https://www.linkedin.com/in/julio-cesar-dias-kasahara-63135113b/?originalSubdomain=br",
+      "logoGithub": "https://github.com/juliokasahara"
+    },
+    {
+      "avatar": "https://media.licdn.com/dms/image/C4E03AQHtbWm7CFQ4Xw/profile-displayphoto-shrink_200_200/0?e=1572480000&v=beta&t=467KMfljHB3RSAGqJdh_cZeayTh3POZRId5DZzcFdsE",
+      "nome": "Gabriel Augusto",
+      "sub": "Desenvolvedor de front-end na Cast group",
+      "local": "Araraquara",
+      "logoLinkedin": "https://www.linkedin.com/in/gabriel-augusto-942835145/",
+      "logoGithub": "https://github.com",
+      "id": 6
+    }
+  ],
+  "projetos": [
+    {
+      "id": 1,
+      "title": "Xadrez em HTML",
+      "author": "Lucas, Paulo, Victoria, João Paulo"
+    },
+    {
+      "id": 2,
+      "title": "Acessibilidade",
+      "author": "Eduardo, Lucas, Rafael, Willian, Lucas, Leonardo, Isacc, Mario"
+    },
+    {
+      "id": 3,
+      "title": "Sonar",
+      "author": "Luis, Mateus, Adonias, Felipe, Irwing, Marcelo"
+    },
+    {
+      "title": "Urna Eletrônica",
+      "author": "Teste",
+      "id": 4
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

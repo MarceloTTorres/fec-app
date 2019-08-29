@@ -4,7 +4,7 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      About
+      Sobre
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,17 +13,17 @@
 <ion-content padding>
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Card Title</ion-card-title>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title>Desenvolvedores</ion-card-title>
+      <ion-card-subtitle>FEC-APP 2019</ion-card-subtitle>
     </ion-card-header>
   
     <ion-card-content>
-      Aqui vamos falar um pouco sobre o app.
+      Este é um aplicativo mobile, feito em Ionic, pelos alunos da Uniara do curso Sistemas da Informação.
     </ion-card-content>
   </ion-card>
   
   <ion-card>
-    <ion-item *ngFor="let item of usuarios">
+    <ion-item *ngFor="let item of alunos">
         <ion-avatar slot="start">
           <img src="{{item.avatar}}">
         </ion-avatar>
@@ -45,5 +45,10 @@
       </ion-item>
   </ion-card>
 
+  <ion-fab vertical="bottom" class="add" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="openModal()" expand="full">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
 </ion-content>

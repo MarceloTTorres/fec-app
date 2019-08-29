@@ -11,6 +11,6 @@ export class HomePage {
   
   constructor(){}
 
-  usuario: any = 'Bem vindo! DUzinGG';
+  usuario: any = 'Bem vindo!';
 
 }

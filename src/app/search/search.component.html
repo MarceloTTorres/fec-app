@@ -4,7 +4,7 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      Search Project
+      Projetos FEC
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,13 +13,20 @@
   <form #form="ngForm">
     <div>
       <ion-item>
-        <ion-input (keyup)="findProject(form)" name="projeto" type="text" placeholder=" NOME, ÁREA DE CONHECIMENTO, CURSO, ALUNO PARTICIPANTE ou PALAVRA CHAVE" ngModel required></ion-input>
+        <ion-input (keyup)="findProject(form.value)" name="projeto" type="text" placeholder="Pesquise pelo nome do projeto!" ngModel required></ion-input>
       </ion-item>
     </div>
     <ion-list>
-      <ion-item (click)="viewProject(item.id)" *ngFor="let item of items">
+      <ion-item (click)="viewProject(item.id)" *ngFor="let item of projetos">
         {{item.title}}
       </ion-item>
     </ion-list>
   </form>
+
+  <ion-fab vertical="bottom" class="add" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="openModal()"  expand="full">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
 </ion-content>
