@@ -1,4 +1,6 @@
+import { ServiceService } from './../service';
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-list',
@@ -20,7 +22,7 @@ export class ListPage implements OnInit {
     'build'
   ];
   public items: Array<{ title: string; note: string; icon: string }> = [];
-  constructor() {
+  constructor(private service: ServiceService, private modalController: ModalController) {
     for (let i = 1; i < 11; i++) {
       this.items.push({
         title: 'Item ' + i,
@@ -32,70 +34,17 @@ export class ListPage implements OnInit {
 
   ngOnInit() {
   }
-  // add back when alpha.4 is out
-  // navigate(item) {
-  //   this.router.navigate(['/list', JSON.stringify(item)]);
-  // }
+
+  async closeModal() {
+    await this.modalController.dismiss();
+  }
+
+  logForm(form) {
+    console.log(form.value);
+    this.service.saveProject(form.value).subscribe(resp => {
+      console.log(resp);
+      this.modalController.dismiss();
+    });
+  }
+
 }
-
-// próxima implementação do API de geolocalização
-
-// import { Component, OnInit } from '@angular/core';
-
-// import { Geolocation } from '@ionic-native/geolocation/ngx';
-// import { LoadingController } from '@ionic/angular';
-
-// declare const google;
-
-// @Component({
-//   selector: 'app-list',
-//   templateUrl: 'list.page.html',
-//   styleUrls: ['list.page.scss']
-// })
-// export class ListPage implements OnInit {
-//   mapRef = null;
-
-//   constructor(
-//     private geolocation: Geolocation,
-//     private loadingCtrl: LoadingController
-//   ) {
-
-//   }
-
-//   ngOnInit() {
-//     this.loadMap();
-//   }
-
-//   async loadMap() {
-//     const loading = await this.loadingCtrl.create();
-//     loading.present();
-//     const myLatLng = await this.getLocation();
-//     const mapEle: HTMLElement = document.getElementById('map');
-//     this.mapRef = new google.maps.Map(mapEle, {
-//       center: myLatLng,
-//       zoom: 12
-//     });
-//     google.maps.event
-//     .addListenerOnce(this.mapRef, 'idle', () => {
-//       loading.dismiss();
-//       this.addMaker(myLatLng.lat, myLatLng.lng);
-//     }, 100000 );
-//   }
-
-//   private addMaker(lat: number, lng: number) {
-//     const marker = new google.maps.Marker({
-//       position: { lat, lng },
-//       map: this.mapRef,
-//       title: 'Hello World!'
-//     });
-//   }
-
-//   private async getLocation() {
-//     const rta = await this.geolocation.getCurrentPosition();
-//     return {
-//       lat: rta.coords.latitude,
-//       lng: rta.coords.longitude
-//     };
-//   }
-
-// }

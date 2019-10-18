@@ -25,7 +25,8 @@ const routes: Routes = [
   },
   { path: 'register', loadChildren: './auth/register/register.module#RegisterPageModule' },
   { path: 'login', loadChildren: './auth/login/login.module#LoginPageModule' },
-  { path: 'maps', loadChildren: './maps/maps.module#MapsPageModule' }
+  { path: 'maps', loadChildren: './maps/maps.module#MapsPageModule' },  { path: 'second', loadChildren: './modals/second/second.module#SecondPageModule' }
+
 
 
 ];

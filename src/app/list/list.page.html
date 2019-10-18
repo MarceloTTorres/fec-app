@@ -1,16 +1,31 @@
   <ion-header>
     <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
       <ion-title>
-        List
+        Cadastrar Projetos
       </ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="closeModal()">
+          <ion-icon slot="icon-only" name="close"></ion-icon>
+        </ion-button>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
   
   <ion-content>
-    <ion-list>
+      <form #form="ngForm" (ngSubmit)="logForm(form)" novalidate>
+        <div>
+          <ion-item>
+            <ion-label>Nome Projeto</ion-label>
+            <ion-input name="title" type="text" placeholder="Digite seu nome" ngModel required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>Autores</ion-label>
+            <ion-input name="author" type="text" placeholder="Digite os autores separados por virgula" ngModel required></ion-input>
+          </ion-item>
+        </div>
+        <ion-button type="submit" block>Salvar</ion-button>
+      </form>
+    <!-- <ion-list>
       <ion-item *ngFor="let item of items">
         <ion-icon [name]="item.icon" slot="start"></ion-icon>
         {{item.title}}
@@ -18,6 +33,6 @@
           {{item.note}}
         </div>
       </ion-item>
-    </ion-list>
+    </ion-list> -->
 
   </ion-content>
