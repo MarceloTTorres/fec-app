@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cadastro Desenvolvedores</ion-title>
+    <ion-buttons slot="end">
+        <ion-button (click)="closeModal()">
+          <ion-icon slot="icon-only" name="close"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+      <form #form="ngForm" (ngSubmit)="logForm(form)" novalidate>
+        <div>
+          <ion-item>
+              <ion-label>Avatar</ion-label>
+            <ion-input name="avatar" type="text" placeholder="Cole o link de alguma imagem" ngModel required></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label>Nome</ion-label>
+            <ion-input name="nome" type="text" placeholder="Digite seu nome" ngModel required></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label>Cargo</ion-label>
+            <ion-input name="sub" type="text" placeholder="Digite seu cargo" ngModel required></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label>Local</ion-label>
+            <ion-input name="local" type="text" placeholder="Digite o local" ngModel required></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label>Linkedin</ion-label>
+            <ion-input name="logoLinkedin" type="text" placeholder="Digite o link do perfil do Linkedin" ngModel required></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label>GitHub</ion-label>
+            <ion-input name="logoGithub" type="text" placeholder="Digite o link do perfil do GitHub" ngModel required></ion-input>
+          </ion-item>
+        </div>
+        <ion-button type="submit" block>Salvar</ion-button>
+        </form>
+
+</ion-content>
