@@ -2,3 +2,14 @@ agm-map {
     width: 100%;
     height: 100%;
 }
+
+.widget-reveal-card-image {
+    float: left;
+    height: 74px;
+    width: 106px;
+    border: transparent thin solid;
+    padding: 1px;
+    margin: 0px 5px 5px 0;
+    position: relative;
+    background-size: 106px 74px;
+}

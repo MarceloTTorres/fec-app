@@ -18,17 +18,7 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
-    },
-    {
-      title: 'About',
-      url: '/about',
-      icon: 'information-circle'
-    },
-    {
-      title: 'Search Project',
+      title: 'Projetos',
       url: '/search',
       icon: 'search'
     },
@@ -36,6 +26,11 @@ export class AppComponent {
       title: 'Maps',
       url: '/maps',
       icon: 'map'
+    },
+    {
+      title: 'Sobre',
+      url: '/about',
+      icon: 'information-circle'
     }
   ];
 

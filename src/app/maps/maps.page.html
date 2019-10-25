@@ -11,12 +11,14 @@
 <ion-content padding>
     <agm-map [style.height.px]="height" [latitude]="lat" [longitude]="lng" [gestureHandling]="'auto'"
     [mapTypeId]="'roadmap'" [zoomControl]="false" [zoom]="zoom">
-        <agm-marker *ngFor="let item of tracks" [latitude]="item.lat" [longitude]="item.lng" [label]="item.label" style="height: 300px">
+        <agm-marker *ngFor="let item of tracks" [latitude]="item.lat" [longitude]="item.lng"
+                     [label]="item.label" style="height: 300px">
             <agm-info-window [disableAutoPan]="true" [isOpen]="false">
                 <!-- <small> -->
-                    Name: <small>{{item?.nome}}</small> <br>
-                    Bloco: <small>{{item?.bloco}}</small> <br>
-                    Sala: <small>{{item?.sala}}</small>
+                    <ion-img class="widget-reveal-card-image" [src]="item.img"></ion-img>
+                    <small>{{item?.address}}</small> <br>
+                    <small>{{item?.city}}</small> <br>
+                    <small>{{item?.lat}}, {{item?.lng}}</small>
                 <!-- </small> -->
             </agm-info-window>
         </agm-marker>

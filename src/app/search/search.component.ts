@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../auth/auth.service';
-import { Router, ActivatedRoute } from '@angular/router';
-import { SearchService } from './service/search.service';
+import { Router } from '@angular/router';
+import { ServiceService } from '../service';
+import { ModalController } from '@ionic/angular';
+import { ListPage } from '../list/list.page';
 
 @Component({
   selector: 'app-search',
@@ -10,39 +11,45 @@ import { SearchService } from './service/search.service';
 })
 export class SearchComponent implements OnInit {
 
-  constructor(private router: Router, private searcService: SearchService) { }
+  constructor(private router: Router, private service: ServiceService, private modalController: ModalController) { }
 
-  items: any[] = [
-    {
-      id: 1,
-      title: 'teste 1'
-    },
-    {
-      id: 2,
-      title: 'teste 2'
-    },
-    {
-      id: 3,
-      title: 'teste 3'
-    },
-  ]
+  projetos: any;
 
   ngOnInit() {
-    // Descomentar quando tiver api no backend
-    // this.searcService.findAll().subscribe(resp => {
-    //   this.items = resp;
-    // });
+    this.findAll();
   }
 
   viewProject(id: number): void {
-    this.router.navigate(['view-project/', id]);
+    console.log(id);
+    this.router.navigate(['/list', id]);
   }
 
-  findProject(form): void{
-    console.log(form.value);
-    this.searcService.findByFilter(form.value).subscribe(resp => {
-      this.items = resp;
-    })
+  findProject(form): void {
+    if (form.projeto) {
+      this.service.findByFilter(form.projeto).subscribe(resp => {
+        console.log(resp);
+        this.projetos = resp;
+      });
+    } else {
+      this.service.find().subscribe(resp => {
+        console.log(resp);
+        this.projetos = resp;
+      });
+    }
+  }
+
+  findAll() {
+    this.service.find().subscribe(resp => {
+      console.log(resp);
+      this.projetos = resp;
+    });
+  }
+
+  async openModal() {
+    const modal = await this.modalController.create({
+      component: ListPage
+    });
+    return await modal.present();
   }
 
 }

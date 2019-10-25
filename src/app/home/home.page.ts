@@ -51,5 +51,5 @@ export class HomePage {
    //})
  }
 
-  usuario: any = 'Bem vindo! DUzinGG';
+  usuario: any = 'Bem vindo!';
 }
