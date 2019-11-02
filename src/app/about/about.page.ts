@@ -10,7 +10,7 @@ import { SecondPage } from './../modals/second/second.page';
 })
 export class AboutPage implements OnInit {
 
-  usuarios: any[] = [
+  usuarios: any[] = [ // caso o db.json não funcione
     {
       'id': 1,
       'avatar': 'https://avatars0.githubusercontent.com/u/24421598?s=460&v=4',
@@ -22,7 +22,8 @@ export class AboutPage implements OnInit {
     },
     {
       'id': 2,
-      'avatar': 'https://media.licdn.com/dms/image/C4E03AQH7jOYTirg2pw/profile-displayphoto-shrink_200_200/0?e=1571875200&v=beta&t=jzEo50VSkcRTJtmNMxPMaf-xKguwZkhPrqyuchVFv64',
+      'avatar': 'https://media.licdn.com/dms/image/C4D03AQG_qjQBZhMLlQ/profile-'
+              + 'displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=Cz2A0994yjaTSw05VBl-Y0Y5gijXmOa6D0oZVk1Xb7A',
       'nome': 'Rafael Veloso',
       'sub': 'Desenvolvedor na Cast Group',
       'local': 'Araraquara, São Paulo, Brasil',
@@ -31,7 +32,8 @@ export class AboutPage implements OnInit {
     },
     {
       'id': 3,
-      'avatar': 'https://media.licdn.com/dms/image/C4D03AQEwJaAuiO21SA/profile-displayphoto-shrink_200_200/0?e=1571875200&v=beta&t=hYguKroE7PA6-YaMl95ojZ9mIkO8DLBuG8WP3xWLrGw',
+      'avatar': 'https://media.licdn.com/dms/image/C4D03AQEwJaAuiO21SA/profile-'
+              + 'displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=Ur5-8c_ChWjWFIs2mZdVRnqDv-V06QB1VsXPktGkAtQ',
       'nome': 'Vinicius Vieira',
       'sub': 'Aluno na UNIARA',
       'local': 'Araraquara, São Paulo, Brasil',
@@ -40,7 +42,8 @@ export class AboutPage implements OnInit {
     },
     {
       'id': 4,
-      'avatar': 'https://media.licdn.com/dms/image/C4E03AQHD3baYldDYhw/profile-displayphoto-shrink_200_200/0?e=1571875200&v=beta&t=8OlO_7cswJLdKuyNaTuAGDCNkBwcZGbtZnby7X0eeug',
+      'avatar': 'https://media.licdn.com/dms/image/C4E03AQHD3baYldDYhw/profile-'
+              + 'displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=OvAg6U1M45tF2MwzT5hnM0FGq2BHbPBonG4kPqZ6n_U',
       'nome': 'Eduardo Garcia',
       'sub': 'Desenvolvedor na Cast Group',
       'local': 'Araraquara, São Paulo, Brasil',
@@ -55,7 +58,7 @@ export class AboutPage implements OnInit {
       'local': 'Araraquara, São Paulo, Brasil',
       'logoLinkedin': 'https://www.linkedin.com/in/julio-cesar-dias-kasahara-63135113b/?originalSubdomain=br',
       'logoGithub': 'https://github.com/juliokasahara'
-    },
+    }
   ];
 
   alunos: any;

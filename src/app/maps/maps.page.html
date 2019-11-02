@@ -12,7 +12,7 @@
     <agm-map [style.height.px]="height" [latitude]="lat" [longitude]="lng" [gestureHandling]="'auto'"
     [mapTypeId]="'roadmap'" [zoomControl]="false" [zoom]="zoom">
         <agm-marker *ngFor="let item of tracks" [latitude]="item.lat" [longitude]="item.lng"
-                     [label]="item.label" style="height: 300px">
+                     [label]="item.label" style="height: 300px; width: 320px;">
             <agm-info-window [disableAutoPan]="true" [isOpen]="false">
                 <!-- <small> -->
                     <ion-img class="widget-reveal-card-image" [src]="item.img"></ion-img>
